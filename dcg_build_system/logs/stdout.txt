@@ -1,0 +1,14 @@
+compile command:
+g++-6 -I"/home/dylan/buildSysProjects/Opengl/include" -I"/usr/include" -I"/usr/local/include" -I"/home/dylan/header_only_libs" -I"/home/dylan/buildSysProjects/MY_LIBRARIES/dcg/include" -I"/home/dylan/buildSysProjects/MY_LIBRARIES/gloam/include" -I"/home/dylan/buildSysProjects/Opengl/include_recursive" -I"/home/dylan/buildSysProjects/Opengl/include_recursive/_rendering" -I"/home/dylan/buildSysProjects/Opengl/include_recursive/_rendering/_shaders" -I"/home/dylan/buildSysProjects/Opengl/include_recursive/_rendering/_3d" -I"/home/dylan/buildSysProjects/Opengl/include_recursive/_rendering/_3d/transform" -I"/home/dylan/buildSysProjects/Opengl/include_recursive/_rendering/_3d/transform/_rotation" -I"/home/dylan/buildSysProjects/Opengl/include_recursive/_rendering/_setup" -I"/home/dylan/buildSysProjects/Opengl/include_recursive/_rendering/_assimp" -I"/home/dylan/buildSysProjects/Opengl/include_recursive/_util" -I"/home/dylan/buildSysProjects/Opengl/include_recursive/_gui" -c -o /home/dylan/buildSysProjects/Opengl/dcg_build_system/build/DEBUG/modules/MAIN/objs/home/dylan/buildSysProjects/Opengl/src/main.o /home/dylan/buildSysProjects/Opengl/src/main.cpp -std=c++14 -ggdb3 -fno-omit-frame-pointer -fsanitize=address -ftrapv
+
+
+link command:
+g++-6 -fsanitize=address -fuse-ld=gold /home/dylan/buildSysProjects/Opengl/dcg_build_system/build/DEBUG/modules/MAIN/objs/home/dylan/buildSysProjects/Opengl/src/glmUtil.o /home/dylan/buildSysProjects/Opengl/dcg_build_system/build/DEBUG/modules/MAIN/objs/home/dylan/buildSysProjects/Opengl/src/guiLoadSave.o /home/dylan/buildSysProjects/Opengl/dcg_build_system/build/DEBUG/modules/MAIN/objs/home/dylan/buildSysProjects/Opengl/src/main.o -o /home/dylan/buildSysProjects/Opengl/dcg_build_system/build/DEBUG/bin/program.exc -L"/home/dylan/buildSysProjects/Opengl/./libraries/lib" -L"/usr/lib/nvidia-304" -L"/usr/local/lib" -L"/usr/lib" -L"/usr/lib/x86_64-linux-gnu" -lGL -lGLU -lglfw3 -ldl -lXinerama -lX11 -lXxf86vm -lXrandr -lpthread -lXi -lXcursor -lassimp -lboost_system -lboost_thread -lboost_filesystem -lGLEW -lCGAL -lCGAL_Core -lCGAL_ImageIO -lfreeimage -lasan
+
+
+total time:                    6.003334542999937
+time to make dependancy files: 0
+time to compile source:        5.856188594999935
+time to precompile headers:    0
+time to link:                  0.11219471200001863
+misc time:                     0.03495123599998351
